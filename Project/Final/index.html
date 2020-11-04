@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Norskdatateknikk</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="index-wrapper" class="main-wrapper">
+        <div id="header" class="nav">
+                <a href="index.html"><img id="logo" src="img/main/logo.png" alt="ND logo"></a>
+                <div class="langSelect">
+                    <button id="btn_lang_nor" onclick="norBtn()">Nor</button>
+                    <button id="btn_lang_eng" onclick="engBtn()">Eng</button>
+                </div>
+                <ul>
+                    <li><a id="header_index" href="index.html"><!-- text --></a></li>
+                    <li><a id="header_references" href="references.html"><!-- text --></a></li>
+                    <li><a id="header_about" href="about.html"><!-- text --></a></li>
+                    <li><a id="header_projects" href="projects.html"><!-- text --></a></li>
+                    <li><a id="header_contact" href="contact.html"><!-- text --></a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="hideNavBar()">&#9776;</a>
+            </div>
+        <div class="wrapper">
+            <video id="fiberoptics" autoplay loop muted poster="img/main/fiberoptics.jpg">
+               <source src="img/main/fiberoptics.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+                <div id="video_replace">
+                <img src="img/main/fiberoptics.jpg" alt="Fiberoptics bilde">
+                </div>
+            <div>
+            <h1 id="index_header"><!-- text --></h1>
+            <a id="index_btn" href="contact.html"><!-- text --></a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <section>
+            <h1 id="index_2_header"><!-- text --></h1>
+            <p id="index_2_desc"><!-- text --></p>
+            </section>
+            <img src="img/main/lightbulb.png" alt="Lightbulb">
+        </div>
+        <div class="wrapper">
+            <h1 id="index_3_header"><!-- text --></h1>
+            <div>
+                <div>
+                    <img src="img/main/systemer.png" alt="koding">
+                    <h3 id="index_3_1_header"><!-- text --></h3>
+                    <p id="index_3_1_desc"><!-- text --></p>
+                    </div>
+                <div>
+                    <img src="img/main/instrumentering.png" alt="kretskort">
+                    <h3 id="index_3_2_header"><!-- text --></h3>
+                    <p id="index_3_2_desc"><!-- text --></p>
+                    </div>
+                <div>
+                    <img src="img/main/radioteknikk.png" alt="roboter">
+                    <h3 id="index_3_3_header"><!-- text --></h3>
+                    <p id="index_3_3_desc"><!-- text --></p>
+                    </div>
+                <div>
+                    <img src="img/main/programmering.png" alt="systemer">
+                    <h3 id="index_3_4_header"><!-- text --></h3>
+                    <p id="index_3_4_desc"><!-- text --></p>
+                    </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h1 id="index_4_header"><!-- text --></h1>
+            <img src="img/main/prosess.png" alt="prosess">
+        </div>
+        <div class="footer" id="footer">
+                <div>
+                    <h3 id="adress_header"><!-- text --></h3>
+                    <p id="adress_desc"><!-- text --></p>
+                </div>
+                <div>
+                    <h3 id="email_header"><!-- text --></h3>
+                    <a id="email_desc" href="mailto:"><!-- text --></a>
+                </div>
+                <div>
+                    <h3 id="phone_header"><!-- text --></h3>
+                    <p id="phone_desc"><!-- text --></p>
+                </div>
+        </div>
+    </div>
+<script>let page = "index"</script>
+<script rel="script" src="js/lang.js"></script>
+<script rel="script" src="js/script.js"></script>
+<noscript>Your browser does not support JavaScript!</noscript>
+</body>
+</html>

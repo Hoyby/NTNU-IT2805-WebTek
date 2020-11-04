@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>Norskdatateknikk</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="contact-wrapper" class="main-wrapper">
+        <div class="header">
+            <h1 id="contact_header"><!-- text --></h1>
+            <div id="footer_content"></div>
+        </div>
+        <div class="wrapper">
+            <form method="post" onsubmit="submitForm()">
+            <h3 id="contact_form"><!-- text --></h3>
+                <div>
+                    <label id="contact_name" for="name"><!-- text --></label>
+                    <input type="text" id="name" name="name" placeholder="Full name" pattern="[A-Za-z ÆØÅæøå\s]{1,}" required autofocus>
+                </div>
+                <div>
+                    <label id="contact_email" for="email"><!-- text --></label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                </div>
+                <div>
+                    <label id="contact_subject" for="subject"><!-- text --></label>
+                    <input type="text" id="subject" name="name" placeholder="Subject" required>
+                </div>
+                <div>
+                    <label id="contact_message" for="message"><!-- text --></label>
+                    <textarea class="kontaktskjema" id="message" name="tekst" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" id="contact_submit">Send</button>
+            </form>
+        </div>
+      <div class="wrapper" id="map">
+        <a href="https://www.google.com/maps/place/Professor+Brochs+gate+8,+7030+Trondheim/@63.4152866,10.3937815,17z/data=!3m1!4b1!4m5!3m4!1s0x466d31eb4bafc2e7:0xefecd8aa31fb2421!8m2!3d63.4152842!4d10.3959702" target="_blank">Google maps link</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.525531373171!2d10.393781515974368!3d63.41528658395868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31eb4bafc2e7%3A0xefecd8aa31fb2421!2sProfessor%20Brochs%20gate%208%2C%207030%20Trondheim!5e0!3m2!1sno!2sno!4v1571670136616!5m2!1sno!2sno" allowfullscreen=""></iframe>
+      </div>
+    </div>
+<script>let page = "contact"</script>
+<script rel="script" src="js/lang.js"></script>
+<script rel="script" src="js/script.js"></script>
+<noscript>Your browser does not support JavaScript!</noscript>
+</body>
+</html>

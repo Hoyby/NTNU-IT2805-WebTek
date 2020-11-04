@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Gruppe 21</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="page-wrapper">
+    <!-- ***Header*** -->
+    <header>
+        <div class="container" id="header-wrapper">
+            <h1>WEBTEK GRUPPE 21</h1>
+            <p>Norsk Datateknikk AS <a href="http://norskdatateknikk.no" target="_blank">(link)</a></p>
+            <ul>
+                <li>Alexander Høyby</li>
+                <li>Edvard Liodden</li>
+                <li>Linn Bessesen</li>
+                <li>Mari Solem Talmoen</li>
+                <li>Neva Rustad</li>
+            </ul>
+
+        </div>
+    </header>
+    <!-- ***main*** -->
+    <main>
+        <div id="main-header">
+            <h1>P3</h1>
+            <p>10-nov-19</p>
+        </div>
+
+        <div id="content-wrapper">
+            <div id="menu">
+                <ul>
+                    <li><a class="anchor" href="#one">Administrative details</a></li>
+                    <li><a class="anchor" href="#two">Changes</a></li>
+                    <li><a class="anchor" href="#three">Modularity</a></li>
+                    <li><a class="anchor" href="#four">Folder Structure</a></li>
+                    <li><a class="anchor" href="#five">Distribution of labor</a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="container" id="page-content">
+                <div class="anchor" id="one">
+                    <h2>Administrative details:</h2>
+                    <ul>
+                        <li> Klient: Norsk datateknikk AS</li>
+                        <li> Kontaktperson: Anders Nilsen, ansatt som programvareingeniør og var med på starte opp
+                            bedriften.
+                        </li>
+                        <li> Webadresse: norskdatateknikk.no</li>
+                    </ul>
+                </div>
+
+                <div class="anchor" id="two">
+                    <h2>Changes:</h2>
+                    <h3>Generelt</h3>
+                    <ul>
+                        <li>Vi har ikke fått lastet opp siden vår til domenet norskdatateknikk.no slik vi skrev i P1. Vi
+                            skal senere avtale med kunden hvordan vi gjør dette.
+                        </li>
+                        <li>Vi har ikke laget egne html-dokumenter til header og footer. Vi valgte å løse modularitet
+                            med en xhtml request i JavaScript som henter headern og footern i index.html.
+                        </li>
+                        <li>Vi har ikke laget en egen mappe kaldt "pages" for html filene. Vi følte dette var unødvengig
+                            da det var veldig få sider.
+                        </li>
+                        <li>Den engelske teksten har i stor grad placeholders. Vi har ikke fått engelsk tekst av ND, men
+                            vi har gjort det enket for dem å bytte ut denne teksten via lang.js.
+                        </li>
+                        <li>Standard skriftstørrelse for h1 på skjermer med bredde > 1024, er endret fra 96px til
+                            80px.
+                        </li>
+                        <li>Vi har også laget siden vår mer mobilvennelig ved å ikke bare skjule visse unødvendige
+                            elementer på smale skjermer. Men også flytte dem slik at de passer bedre inn.
+                        </li>
+                    </ul>
+                    <h3>Header</h3>
+                    <ul>
+                        <li>Lagt til “hjem”-knapp i headeren for enklere navigering.</li>
+                        <li>Eng|Nor knappene er satt over hverandre og på linje med den andre teksten.</li>
+                        <li>Headeren er ikke gjennomsiktig som i muckupen. Dette er av estetiske årsaker da headeren
+                            skal følge med siden når brukeren blar nedover, og det vil kanskje være forvirrende om andre
+                            ting skinner igjennom.
+                        </li>
+                    </ul>
+                    <h3>Footer</h3>
+                    <ul>
+                        <li>Ingen endringer.</li>
+                        <li>Det er mulig å trykke på epostadressen og få opp et mailvindu.</li>
+                    </ul>
+                    <h3>Forsiden</h3>
+                    <ul>
+                        <li>Vi har erstattet header bilde på forsiden med video. Fordi vi følte det så bedre ut og
+                            gjorde at siden føltes mer dynamisk.
+                        </li>
+                        <li>Vi endret bakgrunn på navbaren på hovedsiden fra transparent til solid, slik at den blir mer
+                            synlig og teksten blir enklere å lese.
+                        </li>
+                        <li>Footeren på forsiden har fått samme layout som på resten av sidene.</li>
+                        <li>Ikonene er byttet ut med ikoner vi har laget selv, vi har også laget prosesskissen.</li>
+                        <li>Vi har fjernet “Kontakt oss”-knapp i footeren på forsiden fordi vi følte det var overkill.
+                        </li>
+                    </ul>
+
+                    <h3>Referanser</h3>
+                    <ul>
+                        <li>Tidligere prosjekter er fjernet fra referanser på foresørsel av ND, og er istedet lagt under
+                            "prosjekter".
+                        </li>
+                        <li>Tekst og bilde går annahver.</li>
+                        <li>Bare kunder er representert på referanse siden. Det er også lagt til en kort tekst om
+                            referansekundene, samt en link til nettsiden under teksten tilhørende referansekunden (samt
+                            at man kan klikke på logoen.
+                        </li>
+                    </ul>
+                    <h3>Portfolio/Våre prosjekter</h3>
+                    <ul>
+                        <li>Siden har byttet navn fra "portfolio" til "projects".</li>
+                        <li>Siden har gått fra å være bare interne prosjekter til å både inneholde interne prosjekter og
+                            prosjekter med kunder.
+                        </li>
+                        <li>Bildene på siden går ikke helt ut til kanten av siden og det er større mellomrom mellom dem.
+                            Dette er fordio det passet bedre til det generelle designet.
+                        </li>
+                        <li>Vi har endret fra grå til blå overlay. For å få litt mer farge, men samtidig holde
+                            fareprofilen på resten av siden.
+                        </li>
+                        <li>Vi har valgt å fortsette å bruke placeholderbilder på portfoliosiden fordi vi ikke har fått
+                            bilder av bedriften enda og vi har heller ikke fått noe tekst om deres prosjekter. Tanken er
+                            å ha bilder av deres prosjekter med en kort beskrivende tekst om hvert prosjekt som kommer
+                            frem når man hovrer over bildet, dette er vist med placeholder tekst/bilde. Hovereffekten er
+                            gjort ved bruk av css og ikke med javascript som planlagt. Vi fant ut at det var enklere å
+                            oppnå det resultatet vi ønsket ved bruk av css.
+                        </li>
+                        <li>Flere kommenterte at det var vanskelig å vite at man kunne “hovre” over bildene på siden,
+                            derfor la vi til en javascript funksjon som cycler gjennom hovereffekten på bildene.
+                        </li>
+                    </ul>
+                    <h3>Kontakt oss/contact</h3>
+                    <ul>
+                        <li>Rekkefølgen på informasjonen på toppen av “Kontakt Oss”-siden er endret til å matche
+                            footeren.
+                        </li>
+                        <li>Kartet er flyttet fra å være over kontaktskjemaet til å ligge under skjemaet da
+                            kontaktskjemaet kanksje er viktigere.. Når siden vises på liten skjerm, får man kun opp link
+                            til kart og ikke hele kartet. Ved implementasjon av kartet ved hjelp av google maps, fikk vi
+                            opp to warnings om cookies. Det har vi ikke gjort noe med.
+                        </li>
+                        <li>Det er kun et felt for navn i kontaktskjemaet istedet for to. For å kunne sende inn
+                            kontaktskjemaet må alle felt være fylt ut, hvis ikke kommer det en pop-up som forteller
+                            brukeren at dette må gjøres før man kan sende inn skjemaet.
+                        </li>
+                        <li>Margen på siden er gjort mindre og kartet er rektangulært ikke kvadratisk.</li>
+                    </ul>
+
+                    <h3>Endringer i JS</h3>
+                    <ul>
+                        <li>Vi har to javascript dokumenter istedet for ett, script.js og lang.js.</li>
+                        <li>Lang.js inneholder all tekst som blir brukt på nettsiden, både på norsk og på engelsk. Dette
+                            gjorde at vi slapp å lage et html dokument hver for engelsk og norsk side, og betyr at vi
+                            kun har et html-dokument per side. Vi vurderte å bruke en JSON fil for dette. Men fant ut at
+                            den innebygde sikkerheten i nettleserne gjorde dette utfordrende
+                        </li>
+                        <li>Teksten i lang.js blir lagt til DOMen med en for loop.</li>
+                        <li>Header og footer blir importert via en xhtml request.</li>
+                        <li>La til en alert når form blir submitta</li>
+                        <li>Lagt til mobilvennelig nav-bar, med en "burger" meny (takk til W3Schools)</li>
+                        <li>Lagt til en hover-effect cycle på bildene på prosjekt siden for å vise at man kan hovre over
+                            bildene.
+                        </li>
+                    </ul>
+                    <p>Uten om noen av disse endrigene er resten av siden mer eller mindre som illustrert i P2</p>
+                </div>
+
+                <div class="anchor" id="three">
+                    <h2>Modularity:</h2>
+                    <p>Vi har innført modulæritet til siden vår gjennom:</p>
+                    <ul>
+                        <li>Gjennbruke css styling ved bruk av classer. Classene er brukt slit at elementer som skal se
+                            like ut, har samme classe.
+                        </li>
+                        <li>En kode for footer og header i index.html, som blir hentet inn på de andre sidene via xhtml
+                            request.
+                        </li>
+                        <li>Alle sidene vår har samme type layout, noe som fører til at vi kan bruke mye felles styling
+                            for mange av elementene
+                        </li>
+                        <li>Språkendringene og importering av footer/header er laget slik at ingen endring i
+                            javascripten (script.js) skal være nødvendig for å legge til flere språk, ny tekst, eller
+                            nye sider.
+                        </li>
+                    </ul>
+                    <p>Alex hadde hovedansvaret for å implementere generell modulæritet</p>
+
+
+                </div>
+
+
+                <div class="anchor" id="four">
+                    <h2>Folder Strucutre:</h2>
+
+                    <ul>
+                        <li>root
+                            <ul>
+                                <li>index.html</li>
+                                <li>projects.html</li>
+                                <li>about.html</li>
+                                <li>contact.html</li>
+                                <li>references.html</li>
+                                <li>css
+                                    <ul>
+                                        <li>style.css</li>
+                                    </ul>
+
+                                <li>js
+                                    <ul>
+                                        <li>script.js</li>
+                                        <li>lang.js</li>
+                                    </ul>
+
+                                <li>img
+                                    <ul>
+                                        <li>favicon.ico</li>
+
+                                        <li>about
+                                            <ul>
+                                                <li>placeholder-profile-sq.jpg</li>
+                                                <li>mail.png</li>
+                                            </ul>
+
+                                        <li>main
+                                            <ul>
+                                                <li>fiberoptics.mp4</li>
+                                                <li>fiberoptics.jpg</li>
+                                                <li>instrumentering.jpg</li>
+                                                <li>lightbulb.png</li>
+                                                <li>programmering.png</li>
+                                                <li>prosess.png</li>
+                                                <li>radioteknikk.png</li>
+                                                <li>systemer.png</li>
+                                                <li>logo.png</li>
+                                            </ul>
+
+                                        <li>references
+                                            <ul>
+                                                <li>langø.png</li>
+                                                <li>tecnec.png</li>
+                                            </ul>
+
+                                        <li>projects
+                                            <ul>
+                                                <li>bilde1.jpg</li>
+                                                <li>bilde2.jpg</li>
+                                                <li>bilde3.jpg</li>
+                                                <li>bilde4.jpg</li>
+                                            </ul>
+
+                                        <li>references
+                                            <ul>
+                                                <li>langø.png</li>
+                                                <li>tecnec.jpg</li>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                    </ul>
+
+                    <div class="anchor" id="five">
+                        <h2 id="test">Distribution of labor:</h2>
+                        <table>
+                            <tr>
+                                <th>Filnavn</th>
+                                <th>Beskrivelse</th>
+                                <th>Ansvar</th>
+                            </tr>
+                            <tr>
+                                <td>index.html</td>
+                                <td>Dette er forsiden til norsk datateknikk.</td>
+                                <td>Neva, Alex</td>
+                            </tr>
+                            <tr>
+                                <td>portfolio.html</td>
+                                <td>Denne siden viser en samling av bedriftens interne prosjekter og prosjekter gjort
+                                    for kunder.
+                                </td>
+                                <td>Mari</td>
+                            </tr>
+                            <tr>
+                                <td>about.html</td>
+                                <td>Siden viser hvem som jobber i bedriften og hva deres rolle er.</td>
+                                <td>Alex</td>
+                            </tr>
+                            <tr>
+                                <td>contact.html</td>
+                                <td>Her finner man informasjon om hvordan man kan komme i kontakt med bedriften. Siden
+                                    har et kontaktskjema og er kart.
+                                </td>
+                                <td>Linn</td>
+                            </tr>
+                            <tr>
+                                <td>references.html</td>
+                                <td>Denne siden viser hvilke bedrifter ND har gjort oppdrag for og linker videre til
+                                    bedriftenes nettsider.
+                                </td>
+                                <td>Edvard</td>
+                            </tr>
+                            <tr>
+                                <td>lang.js</td>
+                                <td>All tekst som er på nettsiden er lagt inn i dette dokumentet. Det muliggjøre at
+                                    siden kan være både på norsk og engelsk.
+                                </td>
+                                <td>Alex, Edvard, Linn</td>
+                            </tr>
+                            <tr>
+                                <td>script.js</td>
+                                <td>Dette er hovedsiden for alle js-funksjoner. Her lastes språket inn</td>
+                                <td>Alex, Edvard, Linn</td>
+                            </tr>
+                            <tr>
+                                <td>style.css</td>
+                                <td>Inneholder all css som er felles for sidene.</td>
+                                <td>Neva, Mari</td>
+                            </tr>
+                            <tr>
+                                <td>grafikk</td>
+                                <td>Alle logoer + prosess bildene</td>
+                                <td>Laget av Neva</td>
+                            </tr>
+                            <tr>
+                                <td>Brukertesting</td>
+                                <td>Lagde Google forms skjema og intervjuet 3 personer.</td>
+                                <td>Alle</td>
+                            </tr>
+                            <tr>
+                                <td>Feilsøking</td>
+                                <td></td>
+                                <td>Alle</td>
+                            </tr>
+                            <tr>
+                                <td>P3 og P4</td>
+                                <td></td>
+                                <td>Alle</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ***Footer*** -->
+    <footer>
+
+    </footer>
+</div>
+</body>
+</html>

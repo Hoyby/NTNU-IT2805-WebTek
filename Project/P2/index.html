@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Gruppe 21</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- ***Header*** -->
+        <header>
+            <div class="container" id="header-wrapper">
+                <h1>WEBTEK GRUPPE 21</h1>
+                <p>Norsk Datateknikk AS <a href="http://norskdatateknikk.no" target="_blank">(link)</a></p>
+                <ul>
+                    <li>Alexander Høyby</li>
+                    <li>Edvard Liodden</li>
+                    <li>Linn Bessesen</li>
+                    <li>Mari Solem Talmoen</li>
+                    <li>Neva Rustad</li>
+                </ul>
+
+            </div>
+        </header>
+        <!-- ***main*** -->
+        <main>
+            <div id="main-header">
+                <h1>P2</h1>
+                <p>08-oct-19</p>
+            </div>
+
+            <div id="content-wrapper">
+                <div id="menu">
+                    <ul>
+                        <li><a class="anchor" href="#one">Administrative details</a></li>
+                        <li><a class="anchor" href="#two">Purpose, goals and audience</a></li>
+                        <li><a class="anchor" href="#three">Navigational structure</a></li>
+                        <li><a class="anchor" href="#four">Page layout and apperance</a></li>
+                        <li><a class="anchor" href="#five">Content</a></li>
+                        <li><a class="anchor" href="#six">Minimum requirements</a></li>
+                        <li><a class="anchor" href="#seven">Plan</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="container" id="page-content">
+                    <!--Administrative details-->
+                    <div class="anchor" id="one">
+                        <h2>Administrative details:</h2>
+                        <ul>
+                            <li> Klient: Norsk datateknikk AS </li>
+                            <li> Kontaktperson: Anders Nilsen, ansatt som programvareingeniør og var med på starte opp
+                            bedriften.</li>
+                            <li> Webadresse: norskdatateknikk.no </li>
+                        </ul>
+                    </div>
+
+                    <!--Purpose, goals and audience-->
+                    <div class="anchor" id="two">
+                        <h2>Purpose, goals and audience:</h2>
+                        <ul>
+                            <li> Hensikt: Nettsiden skal gi en introduksjon av ND som bedrift. Den skal få dem til å
+                                virke kompetente, pålitelige, seriøse samt unge og kreative.
+                            </li>
+                            <li> Mål: Bedriften ønsker at kunden, etter å ha mottatt visittkort og hørt om bedriften,
+                                selv skal besøke nettsiden, finne nødvendig informasjon på oversiktlig vis og
+                                naturlig ta kontakt med dem. ND har også et ønske om å få frem mer konkret hvilke
+                                tjenester de tilbyr. De vil også vise arbeidsprosessen deres fra idéen til kunde
+                                eller prototype til ferdig levert produkt.
+                            </li>
+                            <li> Målgruppe: Potensielle kunder av NDs produkter og service.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Navigational structure-->
+                    <div class="anchor" id="three">
+                        <h2>Navigational structure:</h2>
+
+                        <figure class="figures" id="struktur">
+                            <img src="img/Nav_struct.jpg" onclick="onClick(this)" class="content_images" alt="Navigational structure">
+                            <figcaption>Struktur.</figcaption> </figure>
+
+                        <p>
+                            Vi skal ikke lage så mange sider for Norsk datateknikk. Det gir derfor mening å ta i
+                            bruk global website navigation som vil si at det er en “top bar” med link til de ulike
+                            sidene tilgjengelig på alle sider. Denne måten å strukturere siden på gir den besøkende
+                            stor frihet til å lett navigere mellom sidene. Det gjør det også lett å oppdage alle
+                            sidene.
+                        </p>
+                        <p>
+                            På siden som omhandler referanser vil det være mulig å trykke seg videre til nettsidene
+                            til de bedriftene Norsk datateknikk har samarbeidet med tidligere. Vi tenker at disse
+                            sidene skal åpnes i nye faner.
+                        </p>
+                        <p>
+                            Norsk datateknikk ønsker at deres nettside skal være både på norsk og engelsk. Det
+                            tenker vi å løse ved å la “ENG|NO” være i “top baren”. Siden åpnes på norsk, men hvis
+                            du trykker på “ENG” får du hele nettsiden på engelsk.
+                            Det skal  være mulig å trykke på “ENG|NO” fra alle sidene på nettsiden. Den siden du er
+                            på når du trykker på “ENG|NO” er den siden du får på engelsk.
+                        </p>
+                    </div>
+
+                    <!--Page layout and apperance-->
+                    <div class="anchor" id="four">
+                        <h2>Page layout and apperance:</h2>
+                        <p>De to universelle funksjonene vil være en header på toppen av siden og en footer nederst
+                            på siden. Begge er tilstede på alle sider, men har en litt annen utforming på hovedsiden
+                            (se mock-up senere i dokumentet). Vi ville at headeren skulle være synlig fra alle
+                            sider, slik at man enkelt kan bevege seg mellom de ulike sidene. Det er også mulig å
+                            komme tilbake til hovedsiden fra alle sider ved å trykke på logen i venstre hjørnet.
+                            vil også være mulig å bytte mellom engelsk og norsk på alle sider, med en knapp
+                            lokalisert i høyre hjørnet.
+                            I footeren er det ulik info om hvordan å kontakte bedriften. Det er  besøksadresse,
+                            mailadresse og telefonnummer. Dette er for at brukeren enkelt skal på tak i den
+                            viktigste informasjonen om bedriften på alle sider.
+                        </p>
+
+                        <figure class="figures" id="palette">
+                            <img src="img/Palette.jpg" onclick="onClick(this)" class="content_images" alt="Colour palette">
+                            <figcaption>Mock-up av de ut universelle funksjonene: Header og Footer. Og oversikt over tekst og farge.</figcaption>
+                        </figure>
+
+                        <ul>
+                            <li>Font: Reem Kufi, Overskrifter: 96px, Underoverskrifter: 48px, Avsnitt: 30px</li>
+                            <li>Farger:
+                                <ul>
+                                    <li>Bakgrunn: Mørk grå, #212121</li>
+                                    <li>Bakgrunn på footer: Blå, #567CB2</li>
+                                    <li>Tekstfarge 1: Hvit, #FFFCFC</li>
+                                    <li>Tekstfarge 2: Blå, #317A85</li>
+                                    <li>Tekstfarge 3: Mørk grå, #212121</li>
+                                    <li>Sekundærfarge på hovedside: Lyseblå, #EEF7FF</li>
+                                </ul></li>
+                        </ul>
+                            <p>Headeren består av logoen til kunden, og link til alle sidene. Samt mulighet til å
+                                bytte mellom norsk og engelsk. Viser hvilket språk og side man er på ved at
+                                nåværende side og nåværende språk er markert i blått. All tekst i headeren er i
+                                størrelse 30px. Tekstfarge er Tekstfarge 1: #FFFCFC, og bakgrunnen er det samme som
+                                resten av siden, Bakgrunn: #212121.</p>
+                            <p>Footeren vil til enhver tid være på bunnen av siden, og vil ikke være synlig før man
+                                har scrollet til bunnen av siden. Footeren består av tekst om kontaktinfoen til
+                                bedriften. Vi vil at footeren skal være interaktiv, derfor vil vi legge inn slik at
+                                det er mulighet til å trykke på teksten og få opp et vindu for å sende mail. Vi
+                                ønsker også å gjøre slik at man kan åpne adressen i en kartapplikasjon og ringe
+                                nummer når man er på telefon, men dette er et pluss hvis vi får til. Teksten i
+                                footeren er i 48px og 30px. Bakgrunnsfargen er Bakgrunn på footer: #567CB2 og
+                                tekstfargen er Tekstfarge 1: #FFFCFC.</p>
+                            <p>Logoen er i størrelsen 531x98 px.</p>
+                            <p>Når man er på mobil vil logoen bevares, men resten av headeren vil bli til en
+                                hamburgermeny. Teksten i footeren vil komme etter hverandre og ikke ved siden av
+                                hverandre slik som den er i mockupen over. </p>
+                    </div>
+
+                    <!--Content-->
+                    <div class="anchor" id="five">
+
+                        <div id="modal" class="modal" onclick="this.style.display='none'">
+                            <div class="modal-content">
+                                <span class="close" style="cursor:pointer">&times;</span>
+                                <!-- Moved img selector to script.js -->
+                            </div>
+                        </div>
+
+                        <h2 id="test">Content:</h2>
+
+                        <!-- Hovedside -->
+                        <section>
+                            <h3>Hovedside:</h3>
+
+                            <figure class="figures" id="main">
+                                <img src="img/Main.jpg" onclick="onClick(this)" class="content_images" alt="Main">
+                                <figcaption>Mock-up av hovedsiden.</figcaption>
+
+                            </figure>
+                            <p> Hensikten med forsiden skal være å gi kunden et inntrykk av hva Norsk Datateknikk er,
+                                også videre gi insentiv til å ta kontakt. “Trenger du elektronikkhjelp?” er dermed i
+                                fokus, også videre med svar på hvordan Norsk Datateknikk kan hjelpe. Først med
+                                introduksjon av firmaet, videre spesifikt hvilke teknologier de har kunnskap i, også til
+                                slutt deres prosess sammen med kunden, og informasjon om kontakt.  Det er også en
+                                navigeringsbar som man finner på de fleste nettsider øverst i hjørne til høyre med link
+                                til “Om oss”, “Kontakt oss”, “Referanser” og “Våre prosjekter”.</p>
+
+                            <p> Informasjon om hvilke teknologier de kan og prosess, samt bilder for å representere de
+                                må gruppa få samlet inn etter hvert.</p>
+
+                        </section>
+
+                        <!-- Våre prosjekter -->
+                        <section>
+                            <h3>Våre prosjekter:</h3>
+
+                            <figure class="figures" id="Projects">
+                                <img src="img/Projects.jpg" onclick="onClick(this)" class="content_images" alt="Projects">
+                                <figcaption>Mock-up av "Prosjekter" siden.</figcaption>
+                            </figure>
+
+                            <p>Siden “Våre prosjekter” vil fungere som et bildegalleri av bedriftens egne prosjekter.
+                                Man kan se at det er den siden man er inne på ved at “Våre prosjekter” i headeren er
+                                markert i blått.</p>
+                            <p>Øverst på siden vil det være en overskrift “Våre prosjekter” og en kort beskrivelse av
+                                hva siden inneholder. Under vil det være bilder av de ulike prosjektene til bedriften.
+                                Når man hoverer over bildene vil det bli mørklagt, og det vil komme en kort beskrivelse
+                                av prosjektet som vist på bildet oppe til høyre i mockupen. Man vil kunne trykke seg
+                                videre til en egen side om det prosjektet. Vi mangler info om prosjekter og bilder fra
+                                kunden, derfor er denne siden enn så lenge laget med eksempler på bilder og tekst. Denne
+                                siden er noe kunden ønsket seg, men vi er usikre på hvor mye data de har om ulike
+                                prosjekter, derfor vil muligens utformingen av denne siden avhenge litt av dataen vi får
+                                av bedriften. Hvis de har lite info om hvert prosjekt kan det være at det holder med at
+                                det blir en popup over den allerede eksisterende siden når man trykker på bildet, i
+                                stedet for at det er en egen side for hvert prosjekt.</p>
+                            <p>Bildene vil avhenge av størrelsen på skjermen, men vil i utgangspunktet være to bilder i
+                                bredden. Dette vil endres når man ser siden på mobil, da vil det være et bilde i
+                                bredden. Vi vil prøve å gjøre bildestørrelsen så liten som mulig, så siden loader raskt.</p>
+                        </section>
+
+                        <!-- Om oss -->
+                        <section>
+                            <h3>Om oss:</h3>
+                            <figure class="figures" id="About">
+                                <img src="img/About.jpg" onclick="onClick(this)" class="content_images" alt="About">
+                                <figcaption>Mock-up av "Om oss" siden.</figcaption>
+                            </figure>
+                            <p>Det vil være mulig å komme til “om oss”-siden fra alle andre sider i nettsiden. Når man
+                                er inne på siden, vil “kontakt oss” være markert med farge i “top baren”. Selve siden
+                                vil ha overskriften “Om oss” etterfulgt av en ingress som forklarer kort om bedriften.
+                                Målet med siden er å fortelle hvem som driver bedriften og hvordan den ble startet.
+                                Siden skal være kompatibel med ulike skjermstørrelser.</p>
+                            <p>Siden skal ha bilder av alle som jobber i bedriften. Den beskriver  hva de heter, hvem
+                                de er og hvilken stilling de har i bedriften. Mailadressen til hver enkelt person skal
+                                også fremkomme. Når man klikker på mailen, åpnes mailen og brukeren kan sende en mail
+                                til vedkommende.</p>
+                            <p>Siden vil ha en margin, og tekst og grafikk vil være midtstilt på siden. Siden følger
+                                ellers page layout.</p>
+                        </section>
+
+                        <!-- Referanser -->
+                        <section>
+                            <h3>Referanser:</h3>
+                            <figure class="figures" id="References">
+                                <img src="img/Customers.jpg" onclick="onClick(this)" class="content_images" alt="Customers">
+                                <figcaption>Mock-up av "Ta kontakt" siden.</figcaption></figure>
+                            <p>Vi legger til siden “referanser” slik at ND skal kunne legge ut tidligere
+                                sammarbeidspartnere for å skape trygghet til nye kunder. Når man er inne på siden, vil
+                                “referanser” menyvalget i toppen av side vær farget i Tekst 1.  Logoen til tidligere
+                                kunder skal legges inn, og når man klikker på logoen skal hjemmesiden til kunden åpnes
+                                i en ny fane. Det skal også legges inn en kort beskrivelse av tidligere prosjekter.
+                                Vi har fått to tidligere kunder fra bedriften, men trenger mer informasjon om
+                                prosjektene om vi skal legge dette til nettsiden.</p>
+                        </section>
+
+                        <!-- Kontakt oss -->
+                        <section>
+                            <h3>Kontakt oss:</h3>
+                            <figure class="figures" id="Contact">
+                                <img src="img/Contact.jpg" onclick="onClick(this)" class="content_images" alt="Contact">
+                                <figcaption>Mock-up av "Ta kontakt" siden.</figcaption></figure>
+                            <p>Det vil være mulig å komme til “kontakt oss”-siden fra alle andre sider i nettsiden.
+                                Når man er inne på siden, vil “kontakt oss” være markert med farge i “top baren”. Selve
+                                siden vil ha overskriften “Ta kontakt”. Målet med siden er å fortelle brukeren hvordan
+                                de kan komme i kontakt med bedriften. Siden skal være kompatibel med ulike
+                                skjermstørrelser.</p>
+                            <p>Rett under sidens overskrift finner man måter å ta kontakt med bedriften. Bedriftens
+                                mail, adresse og telefonnummer vil være synlig, og det vil være mulig å sende mail eller
+                                ringe hvis man trykker på enten mailadressen eller telefonnummeret til Norsk datateknikk.</p>
+                            <p>Det vil i tillegg være inkludert et google maps-vindu slik at den besøkende enkelt kan se
+                                hvor de holder til.</p>
+                            <p>På siden skal det være et kontaktskjema. Kontaktskjemaet gjør det mulig for den besøkende
+                                på siden å ta direkte kontakt med bedriften via nettsiden. Skjemaet vil ha flere felt,
+                                og de er synlige ved at de fargemessig skiller seg fra bakgrunnen.</p>
+                            <p>Siden vil ha en margin, og tekst og grafikk vil være midtstilt på siden. Siden følger
+                                ellers page layout.</p>
+                        </section>
+
+                        <!-- Annet -->
+                        <section>
+                            <h3>Annet:</h3>
+                            <p>Under samtale med bedriften før øving P1 sa de at de muligens ønsket å vise frem hva
+                                de gjør og hvordan de jobber. Vi skrev om dette i punkt 5.f. De har ikke kommet tilbake
+                                med mer informasjon, og vi har derfor valgt å ikke lage siden i denne omgang.</p>
+                        </section>
+
+                    <!--Minimum requirements-->
+                    <div class="anchor" id="six">
+                        <h2>Minimum requirements:</h2>
+                        <ul>
+                            <li>Javascript implementations:<ul>
+                                <li>Hover over bilder i "våre prosjekter" for mer informasjon om prosjektene</li>
+                                <li>Knapp for å bytte mellom norsk og engelsk språk</li>
+                                <li>Samme header og footer på alle sider</li>
+                                <li>Seksjoner / bilder fader inn når man scroller til dem, og ut når man scroller
+                                vekk fra dem for å skape klarere skiller mellom de forskjellige seksjonene på sidene
+                                spesielt hovedsiden.</li>
+                            </ul></li>
+                        </ul>
+                    </div>
+
+                    <!--Plan-->
+                    <div class="anchor" id="seven">
+                        <h2>Plan:</h2>
+
+                        <figure class="figures" id="Folder_structure">
+                            <img src="img/Folder_structure.png" onclick="onClick(this)" class="content_images" alt="Folder structure">
+                            <figcaption>Planlagt mappestruktur.</figcaption>
+                        </figure>
+
+                        <p>Oversikt over interne frister og hvem som gjør hva.</p>
+                        <p>Mappe strukturen gir oversikt og legges opp til utvidelse. Vi lager undermappr for CSS, IMG,
+                            og JS. Html-filene for alle sider som ikke er hovedsiden legges i egen mappe. Hovedsiden,
+                            "Index.html" legges i root folderen. Alle mapper og tilhørende filer vil bli opprettet i
+                            neste fase av prosjektet.</p>
+
+                        <table>
+                            <tr>
+                                <th>Filnavn</th>
+                                <th>Beskrivelse</th>
+                                <th>Ansvar</th>
+                                <th>Deadline</th>
+                            </tr>
+                            <tr>
+                                <td>nb_mainpage.html</td>
+                                <td>Hovedside bokmål</td>
+                                <td>Neva</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>en_mainpage.html</td>
+                                <td>Hovedside engelsk</td>
+                                <td>Neva</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>nb_references.html</td>
+                                <td>Referanser og tidligere prosjektpartnere bokmål</td>
+                                <td>Edvard</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>en_references.html</td>
+                                <td>Referanser og tidligere prosjektpartnere engelsk</td>
+                                <td>Edvard</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>nb_about.html</td>
+                                <td>Informasjon om selskapet bokmål</td>
+                                <td>Alex</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>en_about.html</td>
+                                <td>Informasjon om selskapet engelsk</td>
+                                <td>Alex</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>nb_contact.html</td>
+                                <td>Kontaktinformasjon og kontaktskjema bokmål</td>
+                                <td>Linn</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>en_contact.html</td>
+                                <td>Kontaktinformasjon og kontaktskjema engelsk</td>
+                                <td>Linn</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>nb_portfolio.html</td>
+                                <td>Visnig av tidligere og pågående prosjekter bokmål</td>
+                                <td>Mari</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>en_portfolio.html</td>
+                                <td>Visning av tidligere og pågående prosjekter&nbsp;&nbsp;engelsk</td>
+                                <td>Mari</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>script.js</td>
+                                <td>Javascript</td>
+                                <td>Alex, Edvard, Linn</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>style.css</td>
+                                <td>En css fil med all styling til nettsiden</td>
+                                <td>Mari, Neva</td>
+                                <td>01.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>Testing</td>
+                                <td>Bugfix og finpuss av siden</td>
+                                <td>Alle</td>
+                                <td>09.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>Bruker test</td>
+                                <td>Testing av siden av potensielle brukere for brukervennlighet</td>
+                                <td>Alle</td>
+                                <td>09.11.19</td>
+                            </tr>
+                            <tr>
+                                <td>P3 &amp; P4</td>
+                                <td>Siste frist for levering av porsjekt</td>
+                                <td>Alle</td>
+                                <td>10.11.19</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+        <!-- ***Footer*** -->
+        <footer>
+
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
