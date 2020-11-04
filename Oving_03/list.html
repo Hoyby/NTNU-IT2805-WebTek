@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A list apart</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <h1>This is a list</h1>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li><ul class="css"> <!-- Getting an error from the w3 validator on this nested list.-->
+            <li>LESS</li> <!--However, w3schools specs tells me that this is how to make a nested list-->
+            <li>Sass</li> <!--https://www.w3schools.com/html/html_lists.asp-->
+            <li>SCSS</li>
+          </ul></li>
+        <li>JavaScript</li>
+        <li><ul>
+            <li>React</li>
+            <li>Node</li>
+            <li id="jq">Jquery</li>
+            <li>AngularJS</li>
+            <li>Backbone</li>
+            <li id="ember">Ember</li>
+            <li>Babel</li>
+          </ul></li>
+      </ul>
+
+    <footer id="footer">Made by: Alex</footer>
+    </div>
+
+  </body>
+</html>

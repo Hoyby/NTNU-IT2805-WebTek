@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tax forms: Bar chart with lines</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+</head>
+<body>
+
+<canvas id="chart" width="700" height="550"></canvas>
+
+<script>
+    const canvas = document.getElementById('chart');
+    const context = canvas.getContext('2d');
+
+    /* Draw a line from (fromX, fromY) to (toX, toY) */
+    function drawLine(fromX, fromY, toX, toY) {
+        context.beginPath();
+        context.moveTo(toX, toY);
+        context.lineTo(fromX, fromY);
+        context.stroke();
+    }
+
+    /* Draw a text (string) on (x, y) */
+    function drawText(text, x, y) {
+        context.fillStyle = 'black';
+        context.fillText(text, x, y);
+    }
+
+    /* Draw a text and with a line to its right */
+    function drawLineWithText(text, fromX, fromY, toX, toY) {
+        drawText(text, fromX - 50, fromY + 10);
+        drawLine(fromX, fromY, toX, toY);
+    }
+
+    /* Insert your code here. */
+    /* Draw lines */
+    for(let i = 1; i <= 10; i++){
+        drawLineWithText(1100000-100000*i, 100, i*50, 600, i*50)
+    }
+
+    /* Draw "legend" box */
+    function drawBox(x, y, height, width, colour) {
+        context.beginPath();
+        context.rect(x, y, width, height);
+        context.fillStyle = colour;
+        context.fill()
+    }
+    /* Draw "legend" element*/
+    function drawLegend(x, y, height, width, colour, text){
+        drawBox(x, y, height, width, colour);
+        drawText(text, x+40, y+20 )
+    }
+
+    drawLegend(610, 50, 20, 35, "red", "Income");
+    drawLegend(610, 80, 20, 35, "blue", "Wealth");
+
+    function drawBars() {
+        let i = 0;
+        for(tax of taxForms){
+            let income = tax.income;
+            let wealth = tax.wealth;
+            console.log(income);
+            drawBox(150+150*i, 550, -income*0.0005, 40, "red");
+            drawBox(200+150*i, 550, -wealth*0.0005, 40, "blue");
+            i += 1
+        }
+    }
+    drawBars()
+
+</script>
+</body>
+</html>

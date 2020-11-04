@@ -1,0 +1,6 @@
+1. What is the difference between position: absolute and position: fixed?
+    Absolute is placed relative to its parent (if parent is relative) or relative to the page.
+    Whilst fixed is placed relative to the viewport. Therefore it will always stay in the same
+    place on the screen.
+2. With CSS3, how do we access the third element within another element?
+    "some_element" "child_element":nth-child(3) {    }

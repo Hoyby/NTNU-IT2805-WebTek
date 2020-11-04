@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Income greather than 500 000</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+  </head>
+  <body>
+    <script>
+          let herosHighIncomeList = taxForms.filter(income => income.income > 500000);
+          for(let hero of herosHighIncomeList){
+            console.log(hero.realName);
+          }
+    </script>
+  </body>
+</html>

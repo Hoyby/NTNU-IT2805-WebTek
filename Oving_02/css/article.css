@@ -1,0 +1,41 @@
+body {
+    background-color: #d9d9d9;
+}
+article {
+    font-size: 20px;
+    width:30em;
+    margin: auto;
+    color: #323232;
+}
+img{
+    max-width: 30em;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 1.8em;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+p, blockquote, ul, ol {
+    font-family: georgia, sans-serif;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+#facts {
+    margin: 1em 0 1em 1em;
+    width: 50%;
+    border: 1px dashed;
+    float: right;
+}
+#facts > ul {
+    list-style-image: url('../img/cup-icon.svg');
+    line-height: 1.5em;
+    padding-left: 1.5em;
+}

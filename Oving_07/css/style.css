@@ -1,0 +1,29 @@
+li input[type=checkbox]:checked + label{
+    text-decoration: line-through;
+}
+body *{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+form{
+    background-color: #d8d8d8;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100vh;
+}
+label, #txt{
+    width: 100%;
+}
+#submit{
+    float: right;
+    width: 20%;
+    margin: 10px;
+}
+form div {
+    margin: 5px;
+}
+li{
+    list-style: none;
+}

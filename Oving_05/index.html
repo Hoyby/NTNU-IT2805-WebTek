@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IT2805 assignment 5: JavaScript introduction</title>
+
+    <style>
+      .box{
+        /* Sets the size and position of each box */
+        width: 200px;
+        height: 200px;
+        background-color: #185D8B;
+        margin: 10px;
+
+        /* Sets the font within each box*/
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        line-height: 200px;
+        font-size: 100px;
+      }
+
+      .buttons{
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id='title'></h1>
+    <h2>Part 5</h2>
+    <div class='buttons'>
+      <button onclick="changeDisplay()">Display: none </button>
+      <button onclick="changeVisibility()">Visibility: hidden</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+    <div class='box' id='magic'> 1 </div>
+    <div class='box'> 2 </div>
+
+    <h2>Part 6</h2>
+    <ul id='tech'>
+    </ul>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--I put it at the bottom of body, for a faster visual loading of content and therefore a better
+     user experience, as the page is allowed to load freely without parsing and execution from the JS
+     file. Also if you have objects or functions in the external JS that you want to use, you must
+     first wait for page the page to load so that you can select the elements. A bonus is that if the
+     JS crashes, there will still be content on the site. (And not a blank site)
+
+     Also I put the script in a js folder, to maintain a clean structure.-->
+  </body>
+
+</html>

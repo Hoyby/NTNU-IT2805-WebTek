@@ -1,0 +1,16 @@
+1. Why does the following expression 0.1 + 0.2 === 0.3 evaluate to false in Javascript?
+    Because float values cannot always be accurately represented using bits.
+
+2. What does the method attribute on a form element decide?
+    How to send the form data.
+
+3. Explain why the form fields appear in the URL when the method on form element is
+changed to GET ?
+    Because GET sends the form as URL variables
+
+4. Why is it considered bad practice to only validate form input with HTML5 and/or
+Javascript?
+    Because you can never trust the user. So you should also have serverside validation.
+
+5. When is it appropriate to use textarea over input ?
+    Textarea is multiline (unlimited characters)

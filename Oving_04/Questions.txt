@@ -1,0 +1,21 @@
+1. Why do mobile phones usually ignore auto play on video elements?
+	Because OS developers intentionally disable autoplay in order to preserve the users mobile data.
+	
+2. What will the CSS snippet at the end of this section do if the visitor is browsing on a
+device with 320 x 568 resolution?
+	Nothing. The #logo will only hide if the device has a width bewteen 768px and 1024px
+	
+3. Mention some of the advantages of having a single responsive website instead of
+dedicated versions like m.til.no for mobile and til.no for desktop?
+	Mobile versions may exclude content or functionality that could have been useful for some users.
+	*Some responsive designs may do this aswell, but in a way that keeps the relevant content.
+		It may instead remove functionality that is not as needed on mobile devices. 
+	Having an extra mobile website also means more maintenance.
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+	#logo {
+		display: none;
+	}
+}

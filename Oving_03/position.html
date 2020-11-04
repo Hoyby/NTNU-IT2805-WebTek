@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IT2805</title>
+    <meta charset="utf-8">
+
+    <style>
+
+    html, body{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    /* Part 1 */
+
+    .header{
+      font-family: sans-serif;
+      padding-top: 30px;
+      margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .box{
+      border-width: 2px;
+      border-color: #0060A3;
+      border-style: solid;
+      height: 400px;
+        width: 50%;
+        margin: auto;
+        position: relative;
+    }
+
+    .one{
+      width: 100px;
+      height: 100px;
+      border-width: 2px;
+      border-color: #FAA21B;
+      border-style: solid;
+        margin: 10px;
+    }
+
+    .two{
+      width: 100px;
+      height: 100px;
+      border-width: 2px;
+      border-color: #FAA21B;
+      border-style: solid;
+      background-color: #fff;
+        margin: 10px;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    .three{
+      width: 100px;
+      height: 100px;
+      border-width: 2px;
+      border-color: #FAA21B;
+      border-style: solid;
+      background-color: #fff;
+        position: absolute;
+        right: -52px; /* width of "three"/2 + border */
+        top: 85px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .five{
+      bottom: 10px;
+      right: 10px;
+      font-size: 35px;
+      font-family: sans-serif;
+        text-align: right;
+        position: absolute;
+
+    }
+
+    .four{
+      width: 50px;
+      height: 50px;
+      border-width: 2px;
+      border-color: #FAA21B;
+      border-style: solid;
+
+    }
+
+    /* Part 2 */
+      .five a:visited {
+          color: fuchsia;
+      }
+      .five a:link{
+          color: blue;
+      }
+      .five a:hover{
+          color: #0060A3;
+      }
+    .five a:active{
+        color: lightskyblue;
+    }
+
+  </style>
+</head>
+<body>
+
+    <div class="header">
+      <h1>Assignment 3: position</h1>
+    </div>
+
+    <div class="box">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three">
+        <div class="four"></div>
+      </div>
+      <div class="five">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> CSS is awesome </a>
+      </div>
+    </div>
+
+
+
+</body>
+</html>
